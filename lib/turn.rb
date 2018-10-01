@@ -8,6 +8,10 @@
 #  ask for input again until you get a valid input
 #end
 
+#turn
+def turn(board)
+  puts 
+
 #display_board
 def display_board(board)
   puts " #{board[0]} | #{board[0]} | #{board[0]} "
