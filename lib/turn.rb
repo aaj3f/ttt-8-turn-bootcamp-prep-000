@@ -31,8 +31,7 @@ end
 
 #valid_move?
 def valid_move?(board, index)
-  raw_input -= 1
-  if raw_input <= 8
+  if index <= 8
     if (board[index] == " " || board[index] == "" || board[index] == nil])
       return true
     else
