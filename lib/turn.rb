@@ -12,7 +12,7 @@
 def turn(board)
   puts "Please enter 1-9:"
   raw_input = gets.strip
-  return raw_input
+  input_to_index(raw_input)
 end
 
 #display_board
@@ -24,8 +24,8 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(user_input)
-  user_input = user_input.to_i
+def input_to_index(raw_input)
+  raw_input = raw_input.to_i
   index = user_input -= 1
 end
 
