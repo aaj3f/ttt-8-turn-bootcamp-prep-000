@@ -50,5 +50,6 @@ def turn(board)
     turn(board)
   else
     move(board, input_to_index(raw_input), token = "O")
+  end
 end
 
