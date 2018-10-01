@@ -43,7 +43,7 @@ def valid_move?(board, index)
 end
 
 #move
-def move(board, index, index == "O")
+def move(board, index, token = "O")
   
 end
 
