@@ -33,7 +33,7 @@ end
 def valid_move?(board, index)
   raw_input -= 1
   if raw_input <= 8
-    if (board[index] == " " || board[index] == "" || board[index == nil])
+    if (board[index] == " " || board[index] == "" || board[index] == nil])
       return true
     else
       return turn(board)
