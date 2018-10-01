@@ -32,10 +32,10 @@ def valid_move?(raw_input)
     if (board[raw_input] == " " || board[raw_input] == "" || board[raw_input == nil)]
       return true
     else
-      turn(board)
+      return turn(board)
     end
   else
-    turn(board)
+    return turn(board)
   end
 end
 
