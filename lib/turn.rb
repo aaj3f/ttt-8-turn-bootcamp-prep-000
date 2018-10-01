@@ -49,6 +49,7 @@ def turn(board)
   index = input_to_index(raw_input)
   truth_value = valid_move?(board, index)
   if !(truth_value)
+    puts "Come on, Nick, type the right number, Nick"
     turn(board)
   else
     move(board, index, token = "X")
