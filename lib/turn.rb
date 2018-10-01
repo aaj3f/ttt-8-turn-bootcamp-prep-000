@@ -22,6 +22,7 @@ end
 def input_to_index(raw_input)
   raw_input = raw_input.to_i
   index = raw_input -= 1
+  return index
 end
 
 #valid_move?
