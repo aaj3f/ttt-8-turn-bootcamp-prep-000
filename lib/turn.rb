@@ -22,7 +22,6 @@ end
 def input_to_index(raw_input)
   raw_input = raw_input.to_i
   index = raw_input -= 1
-  return index
 end
 
 #valid_move?
@@ -47,7 +46,6 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   raw_input = gets.strip
-  input_to_index(raw_input)
-  valid_move?(board, index)
+  valid_move?(board, input_to_index(raw_input))
 end
 
