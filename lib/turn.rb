@@ -51,7 +51,7 @@ def turn(board)
   if !(truth_value)
     turn(board)
   else
-    move(board, index, token = "O")
+    move(board, index, token = "X")
   end
 end
 
