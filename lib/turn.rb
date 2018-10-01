@@ -47,11 +47,11 @@ def turn(board)
   puts "Please enter 1-9:"
   raw_input = gets.strip
   index = input_to_index(raw_input)
-  valid_move?(board, index)
-  if !(valid_move?(board, input_to_index(raw_input)))
+  truth_value = valid_move?(board, index)
+  if !(truth_value)
     turn(board)
   else
-    move(board, input_to_index(raw_input), token = "O")
+    move(board, index, token = "O")
   end
 end
 
