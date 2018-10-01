@@ -11,7 +11,8 @@
 #turn
 def turn(board)
   puts "Please enter 1-9:"
-  gets.strip
+  raw_input = gets.strip
+  return raw_input
 end
 
 #display_board
@@ -25,6 +26,17 @@ end
 
 
 #valid_move?
-
+def valid_move?(raw_input)
+  raw_input -= 1
+  if raw_input <= 8
+    if (board[raw_input] == " " || board[raw_input] == "" || board[raw_input == nil)]
+      return true
+    else
+      turn(board)
+    end
+  else
+    turn(board)
+  end
+end
 
 #move
