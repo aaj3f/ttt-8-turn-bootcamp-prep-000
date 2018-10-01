@@ -26,14 +26,14 @@ end
 
 def input_to_index(user_input)
   user_input = user_input.to_i
-  user_input -= 1
+  index = user_input -= 1
 end
 
 #valid_move?
-def valid_move?(raw_input)
+def valid_move?(board, index)
   raw_input -= 1
   if raw_input <= 8
-    if (board[raw_input] == " " || board[raw_input] == "" || board[raw_input == nil])
+    if (board[index] == " " || board[index] == "" || board[index == nil])
       return true
     else
       return turn(board)
