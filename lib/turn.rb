@@ -44,7 +44,7 @@ end
 
 #move
 def move(board, index, token = "O")
-  
+  board[index] = token
 end
 
 
