@@ -8,12 +8,7 @@
 #  ask for input again until you get a valid input
 #end
 
-#turn
-def turn(board)
-  puts "Please enter 1-9:"
-  raw_input = gets.strip
-  return valid_move?(input_to_index(raw_input))
-end
+
 
 #display_board
 def display_board(board)
@@ -47,4 +42,10 @@ def move(board, index, token = "O")
   board[index] = token
 end
 
+#turn
+def turn(board)
+  puts "Please enter 1-9:"
+  raw_input = gets.strip
+  return valid_move?(input_to_index(raw_input))
+end
 
